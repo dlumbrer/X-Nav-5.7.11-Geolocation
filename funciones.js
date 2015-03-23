@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#geo").click(getLocation);
     
     
-    //ME COJE LA LOCALIZACION SI MI NAVEGADOR LO PERMITE
+    //ME COJE LA LOCALIZACION SI MI NAVEGADOR LO PERMITE, DEBERÍA, YA QUE HAY POLYFILL
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
